@@ -1,0 +1,500 @@
+html {
+  --color-background-header: #383838;
+  --color-lightwhite: #a9a9a9;
+  --color-darkwhite: #808080;
+  --color-text: #3f3f3f;
+  --color-blue: #7aaedd;
+  --color-yellow: #ebb651;
+  --color-white: #fff;
+  --color-gray: #eaeaea;
+  --color-pink: #ef939e;
+  --color-footer-about: #353535;
+  --color-footer-contact: #262626;
+  --color-coral: #40bea8;
+  --color-blackforicon: #424242;
+  --color-red: #f23434;
+}
+
+.page-container {
+  width: 100%;
+  padding: 20px 60px 0 60px;
+  position: relative;
+  z-index: 1;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+}
+
+/* Left-side */
+
+.page-container .left-side .table-content {
+  padding: 15px;
+  border: 2px solid var(--color-gray);
+}
+
+.page-container .left-side .table-content h3 {
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.page-container .left-side .table-content li {
+  list-style: none;
+  padding: 20px 10px;
+  border-top: 2px solid var(--color-gray);
+  display: flex;
+}
+
+.page-container .left-side .table-content li .thumbnail {
+  width: 75px;
+  height: 100%;
+  position: relative;
+}
+
+.page-container .left-side .table-content li .thumbnail .thumbnail-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 0.5;
+  animation: expandleft ease-in-out 0.4s;
+  pointer-events: none;
+}
+
+.page-container .left-side .table-content li .thumbnail:hover .thumbnail-hover {
+  display: flex;
+}
+
+.page-container .left-side .table-content li .thumbnail img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.page-container .left-side .table-content li .info {
+  padding: 0 10px;
+}
+
+.page-container .left-side .table-content li .info a.title {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.page-container .left-side .table-content li .info a.title:hover {
+  color: var(--color-blue);
+}
+
+.page-container .left-side .table-content li .info .price {
+  margin-top: 10px;
+}
+
+.page-container .left-side .table-content li .info .price .actual-price {
+  color: var(--color-darkwhite);
+  text-decoration: line-through;
+}
+
+.page-container .left-side .table-content li .info .price .discounted-price {
+  color: var(--color-blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+/* Right-side */
+.page-container .right-side {
+  padding: 0 20px 0;
+}
+
+.page-container .right-side .breadcrumb {
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.page-container .right-side .breadcrumb a {
+  text-decoration: none;
+  color: var(--color-darkwhite);
+}
+
+.page-container .right-side .breadcrumb a:hover {
+  color: var(--color-red);
+}
+
+.page-container .right-side .breadcrumb .icon {
+  display: inline-block;
+  padding: 0 10px;
+  color: var(--color-darkwhite);
+  font-size: 0.6rem;
+}
+
+.page-container .right-side .breadcrumb .current {
+  color: black;
+  font-weight: 600;
+}
+
+.page-container .right-side .detail {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.page-container .right-side .detail .card-thumbnail {
+  border: 5px solid var(--color-gray);
+}
+
+.page-container .right-side .detail .card-thumbnail .main-thumbnail {
+  max-height: 432px;
+  overflow: hidden;
+}
+
+.page-container .right-side .detail .card-thumbnail .main-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  cursor: zoom-in;
+  transition: 0.3s ease-in-out;
+  animation: change ease 0.3s;
+}
+
+@keyframes change {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page-container .right-side .detail .card-thumbnail .main-thumbnail:hover img {
+  transform: scale(1.1);
+}
+
+.page-container .right-side .detail .card-thumbnail .sub-thumbnail {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-gray);
+}
+
+.page-container .right-side .detail .card-thumbnail .sub-thumbnail .sub-item {
+  width: 50px;
+  height: 50px;
+  margin: 20px 5px 5px 0;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.page-container
+  .right-side
+  .detail
+  .card-thumbnail
+  .sub-thumbnail
+  .sub-item:hover {
+  opacity: 1;
+}
+
+.page-container
+  .right-side
+  .detail
+  .card-thumbnail
+  .sub-thumbnail
+  .sub-item.active {
+  border: 1px solid var(--color-red);
+  opacity: 1;
+}
+
+.page-container
+  .right-side
+  .detail
+  .card-thumbnail
+  .sub-thumbnail
+  .sub-item
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.page-container .right-side .detail .card-info {
+  margin-left: 60px;
+}
+
+.page-container .right-side .detail .card-info h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.page-container .right-side .detail .card-info .price {
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+.page-container .right-side .detail .card-info .price .actual-price {
+  color: var(--color-darkwhite);
+  text-decoration: line-through;
+  font-size: 1.2rem;
+}
+
+.page-container .right-side .detail .card-info .price .discounted-price {
+  color: var(--color-blue);
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-right: 15px;
+}
+
+.page-container .right-side .detail .card-info p {
+  margin-top: 30px;
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.page-container .right-side .detail .card-info .quantity {
+  margin-top: 30px;
+  color: var(--color-darkwhite);
+}
+
+.page-container .right-side .detail .card-info .quantity input {
+  color: var(--color-darkwhite);
+  padding: 5px;
+  margin-left: 20px;
+  width: 100px;
+}
+
+.page-container .right-side .detail .card-info .btn {
+  margin-top: 30px;
+}
+
+.page-container .right-side .detail .card-info .btn .btn-addcart {
+  padding: 10px 20px;
+  background-color: var(--color-footer-contact);
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.page-container .right-side .detail .card-info .btn .btn-addcart:hover {
+  background-color: var(--color-blue);
+}
+
+.page-container .right-side .detail .card-info .btn .btn-buy {
+  margin-left: 20px;
+  padding: 10px 20px;
+  border: 2px solid var(--color-gray);
+  color: var(--color-text);
+  font-weight: 600;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.page-container .right-side .detail .card-info .btn .btn-buy:hover {
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+}
+
+/* Description */
+.page-container .right-side .description {
+  margin-top: 40px;
+  border: 2px solid var(--color-gray);
+}
+
+.page-container .right-side .description .tabs {
+  background-color: var(--color-gray);
+}
+
+.page-container .right-side .description .tabs .tab {
+  width: 30%;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: #fff;
+  text-align: center;
+  border-top: 2px solid var(--color-blue);
+}
+
+.page-container .right-side .description .content {
+  padding: 20px;
+  font-size: 0.8rem;
+}
+
+.page-container .right-side .description .content p {
+  padding: 20px;
+  color: var(--color-darkwhite);
+}
+
+/* Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 10px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #000;
+  border-radius: 25px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.close:hover,
+.close:focus {
+  background-color: var(--color-blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 20px 16px;
+  color: var(--color-blue);
+  border-bottom: 2px solid var(--color-gray);
+}
+
+.modal-body {
+  padding: 20px 16px;
+  border: 2px 0 solid var(--color-gray);
+}
+
+.modal-body table .thumbnail {
+   width: 50px;
+}
+
+.modal-body table {
+   width: 100%;
+}
+
+.modal-body table tr {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   padding: 10px;
+   border-bottom: 2px solid var(--color-gray);
+}
+
+.modal-body table td {
+   text-align: center;
+}
+
+.modal-body table input[type='number'] {
+   width: 60px;
+   font-size: .9rem;
+   padding: 5px 10px;
+}
+
+.modal-body table img {
+   width: 100%;
+   object-fit: fill;
+}
+
+.modal-body table a {
+   text-decoration: none;
+   color: var(--color-text);
+}
+
+.modal-body table a:hover {
+   color: var(--color-blue);
+}
+
+.modal-body table .delete:hover {
+   color: var(--color-red);
+   cursor: pointer;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  text-align: end;
+}
+
+.modal-footer .total {
+   font-size: .9rem;
+}
+
+.modal-footer .btn {
+   margin: 10px;
+}
+
+.modal-footer .btn a {
+   outline: none;
+   text-decoration: none;
+   color: var(--color-text);
+   font-size: .9rem;
+   padding: 10px 20px;
+   border: 2px solid var(--color-gray);
+}
+
+.modal-footer .btn input[type='submit'] {
+   outline: none;
+   background-color: transparent;
+   color: var(--color-text);
+   font-size: .9rem;
+   padding: 10px 20px;
+   border: 2px solid var(--color-gray);
+   cursor: pointer;
+}
+
+.modal-footer .btn a:hover,
+.modal-footer .btn input[type='submit']:hover
+{
+   border: 2px solid var(--color-blue);
+   color: var(--color-blue);
+}

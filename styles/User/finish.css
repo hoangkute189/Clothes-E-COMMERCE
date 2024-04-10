@@ -1,0 +1,203 @@
+html {
+   --color-background-header: #383838;
+   --color-lightwhite: #a9a9a9;
+   --color-darkwhite: #808080;
+   --color-text: #3f3f3f;
+   --color-blue: #7aaedd;
+   --color-yellow: #ebb651;
+   --color-white: #fff;
+   --color-gray: #eaeaea;
+   --color-pink: #ef939e;
+   --color-footer-about: #353535;
+   --color-footer-contact:#262626;
+   --color-coral: #40bea8;
+   --color-blackforicon: #424242;
+   --color-red: #f23434;
+   --color-success: rgba(60,118,61,1);
+}
+
+.page-container {
+   width: 100%;
+   padding: 20px 60px 0 60px;
+   position: relative;
+   z-index: 1;
+   min-height: 400px;
+}
+
+/* Breadcrumb */
+.page-container .breadcrumb{
+   font-size: 0.9rem;
+   padding: 10px;
+}
+
+.page-container .breadcrumb a {
+   text-decoration: none;
+   color: var(--color-darkwhite);
+}
+
+.page-container .breadcrumb a:hover {
+   color: var(--color-red);
+}
+
+.page-container .breadcrumb .icon {
+   display: inline-block;
+   padding: 0 10px;
+   color: var(--color-darkwhite);
+   font-size: 0.6rem;
+}
+
+.page-container .breadcrumb .current {
+   color: black;
+   font-weight: 600;
+}
+
+.page-container .line {
+   width: 95px;
+   height: 4px;
+   background-color: var(--color-blue);
+   margin-left: 10px;
+}
+
+.page-container h1 {
+   font-size: 1.5rem;
+   margin-top: 20px;
+   color: var(--color-blue);
+   margin-left: 10px;
+   font-weight: 100;
+   padding-bottom: 10px;
+   border-bottom: 2px solid var(--color-gray);
+}
+
+/* Process */
+.page-container .process {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+.page-container .process .step {
+   width: 152px;
+   height: 79px;
+   text-align: center;
+   border-bottom: 2px solid var(--color-lightwhite);
+   position: relative;
+}
+
+.page-container .process .step .icon {
+   width: 100%;
+   font-size: 1.2rem;
+   padding: 5px 0;
+}
+
+.page-container .process .step .title {
+   width: 100%;
+   font-size: .8rem;
+   padding: 5px 0;
+}
+
+.page-container .process .step .time-line {
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   background-color: var(--color-lightwhite);
+   color: #fff;
+   border-radius: 25px;
+   text-align: center;
+   line-height: 25px;
+   bottom: -12px;
+   left: 65px;
+}
+
+/* Step Active */
+
+.page-container .process .step.active {
+   width: 152px;
+   height: 79px;
+   text-align: center;
+   border-bottom: 2px solid var(--color-blue);
+   position: relative;
+}
+
+.page-container .process .step.active .icon {
+   width: 100%;
+   font-size: 1.2rem;
+   padding: 5px 0;
+   color: var(--color-blue);
+}
+
+.page-container .process .step.active .title {
+   width: 100%;
+   font-size: .8rem;
+   padding: 5px 0;
+   color: var(--color-blue);
+}
+
+.page-container .process .step.active .time-line {
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   background-color: var(--color-blue);
+   color: #fff;
+   border-radius: 25px;
+   text-align: center;
+   line-height: 25px;
+   bottom: -12px;
+   left: 65px;
+}
+
+/* Content */
+.page-container .content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.page-container .content .icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100px;
+   height: 100px;
+   font-size: 3rem;
+   color: var(--color-success);
+}
+
+.page-container .content .message {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.page-container .content .message h2 {
+   margin-bottom: 20px;
+}
+
+.page-container .content .message .continue  {
+   margin-top: 20px;
+   border: 2px solid black;
+   width: 300px;
+   height: 50px;
+   line-height: 50px;
+   border-radius: 20px;
+   text-align: center;
+}
+
+.page-container .content .message .continue:hover {
+   border: 2px solid var(--color-blue);
+}
+
+.page-container .content .message .continue:hover a {
+   color: var(--color-blue);
+}
+
+.page-container .content .message .continue a {
+   display: block;
+   width: 100%;
+   height: 100%;
+   text-decoration: none;
+   color: var(--color-text);
+}

@@ -1,0 +1,373 @@
+html {
+   --color-background-header: #383838;
+   --color-lightwhite: #a9a9a9;
+   --color-darkwhite: #808080;
+   --color-text: #3f3f3f;
+   --color-blue: #7aaedd;
+   --color-yellow: #ebb651;
+   --color-white: #fff;
+   --color-gray: #eaeaea;
+   --color-pink: #ef939e;
+   --color-footer-about: #353535;
+   --color-footer-contact:#262626;
+   --color-coral: #40bea8;
+   --color-blackforicon: #424242;
+   --color-red: #f23434;
+}
+
+.page-container {
+   width: 100%;
+   padding: 20px 60px 0 60px;
+   position: relative;
+   z-index: 1;
+   min-height: 400px;
+}
+
+/* Breadcrumb */
+.page-container .breadcrumb{
+   font-size: 0.9rem;
+   padding: 10px;
+}
+
+.page-container .breadcrumb a {
+   text-decoration: none;
+   color: var(--color-darkwhite);
+}
+
+.page-container .breadcrumb a:hover {
+   color: var(--color-red);
+}
+
+.page-container .breadcrumb .icon {
+   display: inline-block;
+   padding: 0 10px;
+   color: var(--color-darkwhite);
+   font-size: 0.6rem;
+}
+
+.page-container .breadcrumb .current {
+   color: black;
+   font-weight: 600;
+}
+
+.page-container .line {
+   width: 95px;
+   height: 4px;
+   background-color: var(--color-blue);
+   margin-left: 10px;
+}
+
+.page-container h1 {
+   font-size: 1.5rem;
+   margin-top: 20px;
+   color: var(--color-blue);
+   margin-left: 10px;
+   font-weight: 100;
+   padding-bottom: 10px;
+   border-bottom: 2px solid var(--color-gray);
+}
+
+/* Process */
+.page-container .process {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+.page-container .process .step {
+   width: 152px;
+   height: 79px;
+   text-align: center;
+   border-bottom: 2px solid var(--color-lightwhite);
+   position: relative;
+}
+
+.page-container .process .step .icon {
+   width: 100%;
+   font-size: 1.2rem;
+   padding: 5px 0;
+}
+
+.page-container .process .step .title {
+   width: 100%;
+   font-size: .8rem;
+   padding: 5px 0;
+}
+
+.page-container .process .step .time-line {
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   background-color: var(--color-lightwhite);
+   color: #fff;
+   border-radius: 25px;
+   text-align: center;
+   line-height: 25px;
+   bottom: -12px;
+   left: 65px;
+}
+
+/* Step Active */
+
+.page-container .process .step.active {
+   width: 152px;
+   height: 79px;
+   text-align: center;
+   border-bottom: 2px solid var(--color-blue);
+   position: relative;
+}
+
+.page-container .process .step.active .icon {
+   width: 100%;
+   font-size: 1.2rem;
+   padding: 5px 0;
+   color: var(--color-blue);
+}
+
+.page-container .process .step.active .title {
+   width: 100%;
+   font-size: .8rem;
+   padding: 5px 0;
+   color: var(--color-blue);
+}
+
+.page-container .process .step.active .time-line {
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   background-color: var(--color-blue);
+   color: #fff;
+   border-radius: 25px;
+   text-align: center;
+   line-height: 25px;
+   bottom: -12px;
+   left: 65px;
+}
+
+/* Form */
+.form-payment {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin-top: 20px;
+}
+
+.form-payment .title {
+   background-color: var(--color-blue);
+   color: #fff;
+   padding: 10px;
+}
+
+.form-payment .content {
+   padding: 0px 10px;
+}
+
+.form-payment .content h4 {
+   font-size: 1rem;
+   font-weight: 100;
+   margin-top: 20px;
+}
+
+.form-payment .content .register {
+   margin-top: 20px;
+}
+
+.form-payment .content .register a {
+   text-decoration: none;
+   color: var(--color-red);
+   font-size: .8rem;
+}
+
+.form-payment .content h5 {
+   margin-top: 20px;
+   color: var(--color-blue);
+   font-weight: 100;
+}
+
+.form-payment .content .input-area .input-cell {
+   margin-top: 20px;
+}
+
+/* Input */
+.form-payment .content .input-area .input-cell input[type="text"] {
+   border: 2px solid var(--color-gray);
+   outline: none;
+   display: block;
+   width: 100%;
+   height: 40px;
+   padding-left: 10px;
+   line-height: 40px;
+   border-radius: 5px;
+   transition: .4s;
+}
+
+.form-payment .content .input-area .input-cell input[type="text"]:focus {
+   border: 2px solid var(--color-blue);
+   box-shadow: 0 0 5px var(--color-blue);
+}
+
+/* Text Area */
+.form-payment .content .input-area .input-cell textarea {
+   width: 100%;
+   outline: none;
+   border-radius: 5px;
+   padding: 10px;
+   border: 2px solid var(--color-gray);
+   transition: 0.4s;
+}
+
+.form-payment .content .input-area .input-cell textarea:focus {
+   border: 2px solid var(--color-blue);
+   box-shadow: 0 0 5px var(--color-blue);
+}
+
+/* Select */
+.form-payment .content .input-area .input-cell select {
+   width: 100%;
+   height: 30px;
+   line-height: 30px;
+   border-radius: 5px;
+   outline: none;
+   padding-left: 10px;
+}
+
+.form-payment .content .input-area .input-cell select:focus {
+   border: 2px solid var(--color-blue);
+   box-shadow: 0 0 5px var(--color-blue);
+   transition: 0.4s;
+}
+
+/* Left-side */
+.form-payment .left-side {
+   margin-right: 5px;
+   border: 1px solid var(--color-gray);
+}
+
+/* Center-side */
+.form-payment .center-side {
+   margin-right: 5px;
+   border: 1px solid var(--color-gray);
+}
+
+/* Right-side */
+.form-payment .right-side {
+   margin-right: 5px;
+   border: 1px solid var(--color-gray);
+}
+
+.form-payment .right-side .list-item {
+   padding: 10px;
+}
+
+.form-payment .right-side .list-item .item {
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   border-bottom: 2px solid var(--color-gray);
+   padding: 10px 0;
+}
+
+.form-payment .right-side .list-item .item .thumbnail {
+   width: 52px;
+   height: 60px;
+}
+
+
+.form-payment .right-side .list-item .item .thumbnail img {
+   width: 100%;
+   height: 100%;
+   object-fit: fill;
+}
+
+.form-payment .right-side .list-item .item .name {
+   font-size: .9rem;
+}
+
+.form-payment .right-side .list-item .item .name a {
+   text-decoration: none;
+   color: var(--color-text);
+}
+
+.form-payment .right-side .list-item .item .name a:hover {
+   color: var(--color-blue);
+}
+
+.form-payment .right-side .list-item .item .quatity {
+   font-size: .8rem;
+   color: var(--color-lightwhite);
+}
+
+.form-payment .right-side .list-item .item .price {
+   margin-top: 30px;
+   font-size: 0.9rem;
+   color: var(--color-blue);
+   text-align: end;
+}
+
+.form-payment .right-side .total {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 10px;
+   padding: 10px;
+   border-bottom: 2px solid var(--color-gray);
+}
+
+.form-payment .right-side .ship {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 10px;
+   padding: 10px;
+   border-bottom: 2px solid var(--color-gray);
+}
+
+.form-payment .right-side .pay {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 10px;
+   padding: 10px;
+   border-bottom: 2px solid var(--color-gray);
+}
+
+.form-payment .right-side .total .text,
+.form-payment .right-side .ship .text,
+.form-payment .right-side .pay .text
+{
+   font-weight: 600;
+   font-size: 1rem;
+   color: var(--color-darkwhite);
+}  
+
+.form-payment .right-side .total .number,
+.form-payment .right-side .ship .number
+{
+   font-size: .9rem;
+   color: var(--color-darkwhite);
+}
+
+.form-payment .right-side .pay .number {
+   font-size: 1rem;
+   color: var(--color-blue);
+   font-weight: 600;
+}
+
+.form-payment .right-side .submit {
+   display: flex;
+   justify-content: end;
+   margin: 0 10px;
+}
+
+.form-payment .right-side input[type='submit'] {
+   padding: 10px 20px;
+   margin-top: 10px;
+   background-color: var(--color-blackforicon);
+   outline: none;
+   color: #fff;
+   font-size: .8rem;
+   font-weight: 600;
+   border: none;
+   cursor: pointer;
+}
+
+.form-payment .right-side input[type='submit']:hover {
+   background-color: var(--color-blue);
+}

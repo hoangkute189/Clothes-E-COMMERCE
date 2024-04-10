@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Store template</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+   <div class="container">
+      <!-- Header -->
+      <div class="header">
+         <div class="info-bar">
+            <div class="left-side">
+               <span class="info-email"><i class="fa-solid fa-envelope"></i>run01@runtime.vn</span>
+               <span class="info-phone"><i class="fa-solid fa-phone"></i>0908 77 00 95</span>
+            </div>
+            <div class="right-side">
+               <div class="account-control">
+                  <a href="#">Đăng nhập</a>
+                  /
+                  <a href="#">Đăng ký</a>
+               </div>
+               <div class="search">
+                  <input type="text" placeholder="Tìm kiếm...">
+                  <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+               </div>
+            </div>
+         </div>
+         <div class="menu">
+            <div class="logo">
+               <a href="./"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <div class="menu-list">
+               <ul>
+                  <li><a href="./">Trang chủ</a></li>
+                  <li><a href="#">Giới thiệu</a></li>
+                  <li><a href="./User/productByCategories.html">Sản phẩm</a></li>
+                  <li><a href="#">Tin tức</a></li>
+                  <li><a href="#">Liên hệ</a></li>
+               </ul>
+            </div>
+            <div class="cart">
+               <a class="icon" href="./User/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+               <span class="text">Giỏ hàng:</span>
+               <span class="number">2</span>
+            </div>
+         </div>
+      </div>
+
+      <!-- Body -->
+      <div class="body">
+         <div class="sliceshow">
+            <div class="left-side">
+               <div class="categories">
+                  <div class="title">
+                     <span class="icon"><i class="fa-solid fa-list"></i></span>
+                     <span class="name">DANH MỤC</span>
+                  </div>
+                  <div class="list-categories">
+                     <ul>
+                        <li class="parent">
+                           <a href="./User/productByCategories.html"><i class="fa-solid fa-person-dress"></i> Thời trang</a>
+                           <ul class="sub-menu append">
+                              <li><a href="./User/productByCategories.html">Áo sơ mi</a></li>
+                              <li><a href="./User/productByCategories.html">Túi</a></li>
+                              <li><a href="./User/productByCategories.html">Phụ kiện</a></li>
+                           </ul>
+                        </li>
+
+                        <li class="parent">
+                           <a href=""><i class="fa-solid fa-utensils"></i> Thực phẩm</a>
+                        </li>
+
+                        <li class="parent">
+                           <a href=""><i class="fa-solid fa-camera"></i> Điện tử</a>
+                        </li>
+                     
+                        <li class="parent">
+                           <a href=""><i class="fa-solid fa-suitcase"></i> Nội thất</a>
+                           <ul class="sub-menu append">
+                              <li><a href="">Bàn ghế</a></li>
+                              <li><a href="">Cửa</a></li>
+                           </ul>
+                        </li>
+                     
+                        <li class="parent">
+                           <a href=""><i class="fa-regular fa-heart"></i> Nữ trang</a>
+                        </li>
+                     </ul>
+                  </div>
+
+               </div>
+
+               <div class="left-banner">
+                  <img src="./img/banner_img_1.jpg" alt="">
+               </div>
+
+               <div class="left-banner">
+                  <img src="./img/banner_img_2.jpg" alt="">
+               </div>
+
+            </div>
+            <div class="center-side">
+               <div class="slide-show">
+                  <img class="mySlides fade-left" src="./img/slideshow_1.jpg" alt="">
+                  <img class="mySlides fade-right" src="./img/slideshow_2.jpg" alt="">
+                  <img class="mySlides fade-left" src="./img/slideshow_3.jpg" alt="">
+               </div>
+
+               <div class="product-deal">
+                  <div class="switch-tab">
+                     <div class="switch-button button-prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                     </div>
+                     <h4>Ưu đãi lớn</h4>
+                     <div class="switch-button button-next">
+                        <i class="fa-solid fa-angle-right"></i>
+                     </div>
+                  </div>
+
+                  <div class="content-wrapper">
+                     <div class="thumbnail-deal">
+                        <div class="element-hover">
+                           <a href="./User/cart.html" class="cart fade-bottom-4"><i class="fa-solid fa-cart-shopping"></i></a>
+                           <a href="./User/detail.html" class="detail fade-bottom-6"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <span class="label">-52%</span>
+                        <img src="./img/deal1.jpg" alt="">
+                     </div>
+                     <div class="info-deal">
+                        <a href="./User/detail.html">Áo thun nữ Belike</a>
+                        <div class="price">
+                           <span class="actual-price">200.000đ</span>
+                           <span class="discounted-price">95.200đ</span>
+                        </div>
+                        <p>Trẻ trung và cuốn hút theo phong cách đường phố thu-đông với áo nỉ thêu hình động vật của
+                           thương hiệu Asos.- Chất liệu cotton pha- Cổ 3cm- Tay dài, suông- Không lót trong- Màu sắc:
+                           XámHướng dẫn sử dụng:- Giặt bằng tay với nhiệt độ không quá 30°C- Không được tẩy- Không được
+                           sấy khô- Ủi với nhiệt độ...
+                        </p>
+
+                        <div class="time">
+                           <div class="cell-time day">
+                              <div class="number">
+                                 0
+                              </div>
+                              <div class="text">
+                                 NGÀY
+                              </div>
+                           </div>
+                           <div class="cell-time">
+                              <div class="number">
+                                 00
+                              </div>
+                              <div class="text">
+                                 GIỜ
+                              </div>
+                           </div>
+                           <div class="cell-time">
+                              <div class="number">
+                                 00
+                              </div>
+                              <div class="text">
+                                 PHÚT
+                              </div>
+                           </div>
+                           <div class="cell-time">
+                              <div class="number">
+                                 00
+                              </div>
+                              <div class="text">
+                                 GIÂY
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     
+                     
+                  </div>
+
+               </div>
+
+            </div>
+            <div class="right-side">
+               <div class="sales">
+                  <h3>Sản phẩm khuyến mãi</h3>
+                  <ul>
+                     <li>
+                        <a href="./User/detail.html" class="thumbnail-sale">
+                           <div class="thumbnail-hover"><i class="fa-solid fa-plus"></i></div>
+                           <img src="./img/deal1.jpg" alt="">
+                        </a>
+                        <div class="info-sale">
+                           <a href="./User/detail.html">Áo thun nữ Belike</a>
+                           <div class="price">
+                              <span class="actual-price">200.000đ</span>
+                              <span class="discounted-price">90.000đ</span>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <a href="" class="thumbnail-sale">
+                           <div class="thumbnail-hover"><i class="fa-solid fa-plus"></i></div>
+                           <img src="./img/sale2.jpg" alt="">
+                        </a>
+                        <div class="info-sale">
+                           <a href="">Bikini be áo lửng</a>
+                           <div class="price">
+                              <span class="actual-price">200.000đ</span>
+                              <span class="discounted-price">90.000đ</span>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <a href="" class="thumbnail-sale">
+                           <div class="thumbnail-hover"><i class="fa-solid fa-plus"></i></div>
+                           <img src="./img/sale3.jpg" alt="">
+                        </a>
+                        <div class="info-sale">
+                           <a href="">Son môi Itachi</a>
+                           <div class="price">
+                              <span class="actual-price">200.000đ</span>
+                              <span class="discounted-price">90.000đ</span>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <a href="" class="thumbnail-sale">
+                           <div class="thumbnail-hover"><i class="fa-solid fa-plus"></i></div>
+                           <img src="./img/sale4.jpg" alt="">
+                        </a>
+                        <div class="info-sale">
+                           <a href="">Mascara dày và cong</a>
+                           <div class="price">
+                              <span class="actual-price">200.000đ</span>
+                              <span class="discounted-price">90.000đ</span>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="subscribe-box">
+                  <h4>Đăng ký nhận tin</h4>
+                  <input type="text" placeholder="Email của bạn">
+                  <button>Đăng ký</button>
+               </div>
+
+            </div>
+         </div>
+
+         <!-- Banner home -->
+         <div class="banner-home">
+            <img src="./img/banner_home_img.jpg" alt="">
+         </div>
+
+         <!-- Main Content 1-->
+         <div class="main-content group-1">
+            <div class="left-side">
+               <div class="title">
+                  <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
+                  <h3>Thời Trang</h3>
+               </div>
+               <div class="list-item">
+                  <ul>
+                     <li class="active"><a href="">Tất cả</a></li>
+                     <li><a href="">Áo sơ mi</a></li>
+                     <li><a href="">Áo</a></li>
+                     <li><a href="">Túi</a></li>
+                     <li><a href="">Trang phục</a></li>
+                     <li><a href="">Phụ kiện</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="center-side">
+               <div class="card-item">
+                  <div class="thumbnail">
+                     <div class="element-hover">
+                        <a href="./User/cart.html" class="cart fade-bottom-4"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="./User/detail.html" class="detail fade-bottom-6"><i class="fa-solid fa-circle-info"></i></a>
+                     </div>
+                     <span class="label">hot</span>
+                     <img src="./img/item1.jpg" alt="">
+                  </div>
+                  <div class="info-item">
+                     <div class="title"><a href="./User/detail.html">Áo sơ mi nữ VNXK</a></div>
+                     <div class="price">280.000đ<span class="actual-price">200.000đ</span></div>
+                  </div>
+               </div>
+               <div class="card-item">
+                  <div class="thumbnail">
+                     <div class="element-hover">
+                        <a href="" class="cart fade-bottom-4"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="" class="detail fade-bottom-6"><i class="fa-solid fa-circle-info"></i></a>
+                     </div>
+                     <span class="label">hot</span>
+                     <img src="./img/item1.jpg" alt="">
+                  </div>
+                  <div class="info-item">
+                     <div class="title"><a href="">Áo sơ mi nữ VNXK</a></div>
+                     <div class="price">280.000đ</div>
+                  </div>
+               </div>
+               <div class="card-item">
+                  <div class="thumbnail">
+                     <div class="element-hover">
+                        <a href="" class="cart fade-bottom-4"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="" class="detail fade-bottom-6"><i class="fa-solid fa-circle-info"></i></a>
+                     </div>
+                     <span class="label">hot</span>
+                     <img src="./img/item1.jpg" alt="">
+                  </div>
+                  <div class="info-item">
+                     <div class="title"><a href="">Áo sơ mi nữ VNXK</a></div>
+                     <div class="price">280.000đ</div>
+                  </div>
+               </div>
+               <div class="card-item">
+                  <div class="thumbnail">
+                     <div class="element-hover">
+                        <a href="" class="cart fade-bottom-4"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="" class="detail fade-bottom-6"><i class="fa-solid fa-circle-info"></i></a>
+                     </div>
+                     <span class="label">hot</span>
+                     <img src="./img/item1.jpg" alt="">
+                  </div>
+                  <div class="info-item">
+                     <div class="title"><a href="">Áo sơ mi nữ VNXK</a></div>
+                     <div class="price">280.000đ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="right-side">
+               <img src="./img/tab-item1.jpg" alt="">
+            </div>
+         </div>
+
+         <!-- Main content 2 -->
+         <div class="main-content group-2">
+            <div class="left-side">
+               <div class="title">
+                  <div class="icon"><i class="fa-solid fa-heart"></i></div>
+                  <h3>Mỹ phẩm</h3>
+               </div>
+               <div class="list-item">
+                  <ul>
+                     <li class="active"><a href="">Tất cả</a></li>
+                     <li><a href="">Kem dưỡng ẩm</a></li>
+                     <li><a href="">Son môi</a></li>
+                     <li><a href="">Sơn móng tay</a></li>
+                     <li><a href="">Trang điểm</a></li>
+                     <li><a href="">Dưỡng tóc</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="center-side">
+               <div class="card-item">
+                  <div class="thumbnail">
+                     <div class="element-hover">
+                        <a href="" class="cart fade-bottom-4"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="" class="detail fade-bottom-6"><i class="fa-solid fa-circle-info"></i></a>
+                     </div>
+                     <span class="label">hot</span>
+                     <img src="./img/item1.jpg" alt="">
+                  </div>
+                  <div class="info-item">
+                     <div class="title"><a href="">Áo sơ mi nữ VNXK</a></div>
+                     <div class="price">280.000đ<span class="actual-price">200.000đ</span></div>
+                  </div>
+               </div>
+               <div class="card-item">
+                  <div class="thumbnail">
+                     <div class="element-hover">
+                        <a href="" class="cart fade-bottom-4"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="" class="detail fade-bottom-6"><i class="fa-solid fa-circle-info"></i></a>
+                     </div>
+                     <span class="label">hot</span>
+                     <img src="./img/item1.jpg" alt="">
+                  </div>
+                  <div class="info-item">
+                     <div class="title"><a href="">Áo sơ mi nữ VNXK</a></div>
+                     <div class="price">280.000đ</div>
+                  </div>
+               </div>
+               <div class="card-item">
+                  <div class="thumbnail">
+                     <div class="element-hover">
+                        <a href="" class="cart fade-bottom-4"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="" class="detail fade-bottom-6"><i class="fa-solid fa-circle-info"></i></a>
+                     </div>
+                     <span class="label">hot</span>
+                     <img src="./img/item1.jpg" alt="">
+                  </div>
+                  <div class="info-item">
+                     <div class="title"><a href="">Áo sơ mi nữ VNXK</a></div>
+                     <div class="price">280.000đ</div>
+                  </div>
+               </div>
+               <div class="card-item">
+                  <div class="thumbnail">
+                     <div class="element-hover">
+                        <a href="" class="cart fade-bottom-4"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="" class="detail fade-bottom-6"><i class="fa-solid fa-circle-info"></i></a>
+                     </div>
+                     <span class="label">hot</span>
+                     <img src="./img/item1.jpg" alt="">
+                  </div>
+                  <div class="info-item">
+                     <div class="title"><a href="">Áo sơ mi nữ VNXK</a></div>
+                     <div class="price">280.000đ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="right-side">
+               <img src="./img/tab-item2.jpg" alt="">
+            </div>
+         </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+         <div class="about">
+            <div class="card-footer">
+               <div class="icon" style="color: var(--color-pink);">
+                  <i class="fa-solid fa-headset"></i>
+               </div>
+               <div class="info">
+                  <h3>24/7</h3>
+                  <span>Hỗ trợ miễn phí</span>
+               </div>
+            </div>
+            <div class="card-footer">
+               <div class="icon" style="color: var(--color-coral);">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+               </div>
+               <div class="info">
+                  <h3>100% hoàn tiền</h3>
+                  <span>Bảo hành</span>
+               </div>
+            </div>
+            <div class="card-footer">
+               <div class="icon" style="color: var(--color-blue);">
+                  <i class="fa-solid fa-truck-fast"></i>
+               </div>
+               <div class="info">
+                  <h3>Miễn phí shipping</h3>
+                  <span>Trên 5 đơn hàng</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="contact">
+            <div class="list">
+               <h3>Về chúng tôi</h3>
+               <ul>
+                  <li>Giới thiệu</li>
+                  <li>Giao hàng - Đổi trả</li>
+                  <li>Chính sách bảo mật</li>
+                  <li>Liên hệ</li>
+               </ul>
+            </div>
+
+            <div class="list">
+               <h3>Trợ giúp</h3>
+               <ul>
+                  <li>Hướng dẫn mua hàng</li>
+                  <li>Hướng dẫn thanh toán</li>
+                  <li>Tài khoản giao dịch</li>
+               </ul>
+            </div>
+
+            <div class="list">
+               <h3>Kết nối với chúng tôi</h3>
+               <ul>
+                  <li><span class="icon"><i class="fa-brands fa-facebook-f"></i></span>Facebook</li>
+                  <li><span class="icon"><i class="fa-brands fa-google-plus-g"></i></span>Google Plus</li>
+                  <li><span class="icon"><i class="fa-brands fa-twitter"></i></span>Twitter</li>
+                  <li><span class="icon"><i class="fa-brands fa-flickr"></i></span>Flickr</li>
+               </ul>
+            </div>
+
+            <div class="list">
+               <h3>Hãy đến với chúng tôi</h3>
+
+            </div>
+         </div>
+
+         <div class="footer-bottom">
+            <div class="copyright">
+               Copyright © 2016 Big Market. Powered by RUNTIME.VN.
+            </div>
+            <div class="payment">
+               <span><i class="fa-brands fa-cc-visa"></i></span>
+               <span><i class="fa-brands fa-cc-amex"></i></span>
+               <span><i class="fa-brands fa-cc-discover"></i></span>
+               <span><i class="fa-brands fa-cc-mastercard"></i></span>
+               <span><i class="fa-brands fa-cc-paypal"></i></span>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+<!-- Javascript -->
+<script src="./js/slide-show.js"></script>
+
+</html>
